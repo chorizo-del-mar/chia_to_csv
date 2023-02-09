@@ -1,8 +1,3 @@
-# Jose Munoz
-# chia_to_csv.py
-# 2023-02-02
-
-
 import itertools
 import csv
 import sys
