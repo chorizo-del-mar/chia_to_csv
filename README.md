@@ -1,4 +1,4 @@
-# chia\_t\_csv
+# chia\_to\_csv
 
 chia\_to\_csv converts wallet transactions to a received.csv and sent.csv
 file.
