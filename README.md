@@ -1,7 +1,6 @@
-# chia\_to\_csv
+# chia\_to\_csv.py
 
-chia\_to\_csv converts wallet transactions to a received.csv and sent.csv
-file.
+chia\_to\_csv.py takes the output of the CLI Chia Wallet and seperates it into different CSV files(Amount sent.csv, Amount received.csv, Amount rewarded.csv, etc.).
 
 ------------------------------------------------------------------------
 
@@ -9,17 +8,24 @@ file.
 
 chia\_to\_csv.py can either take input from STDIN or a txt file.
 
-Pipe from chia wallet:
+Pipe from Chia Wallet:
 
 ```bash
-chia wallet get_transactions | chia_to_csv.py
+chia wallet get_transactions | python3 chia_to_csv.py
 ```
 
 Read from txt file:
 
 ```bash
-chia_to_csv.py /path/to/file
+python3 chia_to_csv.py /path/to/file
 ```
 
-All of the "received transactions" go into the received.csv file and all
-of the "sent transactions" go into the sent.csv file.
+## Update 2 :smile:
+
+Update 2 fixes some issues with the first version. The first version would ignor rewards and "sent in trade" transactions. Also the entire source code is refactored, so hopefully it is easier to understand.
+
+## Donations
+
+Not required, but much appreciated.
+
+xch17mqudjld8c97jamgpz3vvfnrqtuc4pyuhyvjlk6rnzsd5ejvc30sfdqp0g
